@@ -52,5 +52,5 @@
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"
   },
-  "proxy": "http://localhost:3000"
+  "proxy": "https://api.render.com/deploy/srv-ch72rdjhp8u9bo4s5q2g?key=T5pmsVbpQlI"
 }
