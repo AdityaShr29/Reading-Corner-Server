@@ -4,13 +4,13 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const {MongoClient} = require('mongodb');
 const ObjectId = require('mongodb').ObjectId;
-const apicache = require('apicache');
+// const apicache = require('apicache');
 
 const app = express();
 
-let cache = apicache.middleware;
+// let cache = apicache.middleware;
 
-app.use(cache('5 minutes'));
+// app.use(cache('5 minutes'));
 
 const cloudinary = require("./utils/cloudinary");
 
