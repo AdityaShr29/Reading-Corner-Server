@@ -74,7 +74,7 @@ app.post('/arpit93/add', async (req, res) => {
         apicache.clear("/arpit93/add");
 });
 
-app.post("/arpit93/add-blog", async function(req, res){
+app.post("/add-blog", async function(req, res){
 
     try {
         const imgStr = req.body.image;
