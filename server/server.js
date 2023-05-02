@@ -8,9 +8,9 @@ const apicache = require('apicache');
 
 const app = express();
 
-let cache = apicache.middleware;
+// let cache = apicache.middleware;
 
-app.use(cache('5 minutes'));
+// app.use(cache('5 minutes'));
 
 const cloudinary = require("./utils/cloudinary");
 
@@ -71,7 +71,7 @@ app.post('/arpit93/add', async (req, res) => {
 
         client.close();
 
-        apicache.clear("/arpit93/add");
+        // apicache.clear("/arpit93/add");
 });
 
 app.post("/add-blog", async function(req, res){
@@ -148,7 +148,7 @@ app.get('/all-books', async (req, res) => {
 });
 
 app.get("/books/:bookId", function(req, res){
-
+    
     Book.findOne({_id: req.params.bookId}, function(err, book){
         if(err){
             // HANDLE ERROR 
